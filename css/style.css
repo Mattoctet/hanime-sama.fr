@@ -34,12 +34,3 @@ a {
 a:hover {
     background-color: rgb(175, 175, 175);
 }
-.emoji {
-    font-size: 150px;
-    margin: 20px 0;
-}
-#device-info {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #aaa;
-}
