@@ -28,3 +28,12 @@
     display: inline-block;
     transition: background-color 0.5s ease;
 }
+.emoji {
+    font-size: 150px;
+    margin: 20px 0;
+}
+#device-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
