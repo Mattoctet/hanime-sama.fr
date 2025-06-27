@@ -1,0 +1,27 @@
+<!-- FICHIER : header.htm -->
+<header>
+  <div id="logo" onclick="location.href='/index.htm';">
+    <img src="/img/logo.png" alt="Logo" />
+  </div>  
+
+  <div id="code-input">
+    <input type="text" id="codeField" placeholder="Entrer un code...">
+    <button id="goBtn">OK</button>
+  </div>
+
+  <nav>
+    <div class="nav-item" onclick="location.href='/index.htm';">Accueil</div>
+    <div class="nav-item" onclick="location.href='/anime/index.htm';">Animes</div>
+    <div class="nav-item" onclick="location.href='/manwha/index.htm';">Manhwas</div>
+    <div class="nav-item" onclick="location.href='/manga/index.htm';">Mangas</div>
+  </nav>
+
+  <script>
+    document.getElementById("goBtn").addEventListener("click", function () {
+      const code = document.getElementById("codeField").value.trim();
+      if (code !== "") {
+        window.location.href = "/anime/codeani.htm?code=" + code;
+      }
+    });
+  </script>
+</header>

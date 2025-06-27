@@ -1,0 +1,69 @@
+/*/css/tel/header.css*/
+header {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 10px;
+}
+
+#logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#code-input {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+#code-input input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#code-input button {
+    padding: 8px 14px;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#code-input button:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #212121;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgb(175, 175, 175);
+    color: black;
+}

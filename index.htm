@@ -1,0 +1,79 @@
+<!-- index.htm -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/loadcss.js" defer></script>
+    <title>Hanime-sama Accueil</title>
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header-container">
+        <p>Chargement du header...</p>
+    </div>
+
+    <script>
+    fetch("/header.htm")
+    .then(res => {
+      if (!res.ok) throw new Error("Header non trouvé");
+      return res.text();
+    })
+    .then(html => {
+      document.getElementById("header-container").innerHTML = html;
+    })
+    .then(() => import("/js/header.js"))
+    .catch(err => {
+      document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
+    })
+    .finally(() => {
+      document.body.style.opacity = "1";
+    });
+</script>
+
+    <main>
+        <h1>Bienvenue sur Hanime-sama</h1>
+
+        <section class="horizontal-scroll">
+            <h2>Derniers épisodes</h2>
+            <div class="scroll-container" id="recent"></div>
+        </section>
+
+        <section class="horizontal-scroll">
+            <h2>Populaires</h2>
+            <div class="scroll-container" id="popular"></div>
+        </section>
+    </main>
+
+    <iframe src="/footer.htm"></iframe>
+
+    <script src="/js/homepage.js"></script>
+<div id="remonte-container"></div>
+<script>
+  fetch("/part/remonte.htm")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("remonte-container").innerHTML = html;
+    })
+    .then(() => import("/js/remonte.js"))
+    .then(() => {
+      // Charger dynamiquement le CSS remonte.css
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/css/remonte.css'; // adapte le chemin si besoin
+      document.head.appendChild(link);
+    });
+</script>
+
+
+</body>
+
+</html>

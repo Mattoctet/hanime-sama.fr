@@ -1,0 +1,32 @@
+Voici une petite note pratique à copier/coller et garder sous la main : elle résume comment utiliser les cookies en JavaScript, avec des exemples simples.
+ 
+📝 Note — Utiliser les cookies en JavaScript
+➕ Créer un cookie
+// Syntaxe : nom=valeur; options
+document.cookie = "nom=valeur; path=/; max-age=86400"; // 1 jour
+// Exemple :
+document.cookie = "dernierCode=haitkuda; path=/; max-age=604800"; // 7 jours
+🔍 Lire un cookie
+function getCookie(nom) {
+  const cookies = document.cookie.split("; ");
+  for (let c of cookies) {
+    const [key, value] = c.split("=");
+    if (key === nom) return value;
+  }
+  return null;
+}
+// Exemple d’utilisation :
+const code = getCookie("dernierCode");
+console.log("Code en cookie :", code);
+➖ Supprimer un cookie
+// On met max-age=0
+document.cookie = "dernierCode=; path=/; max-age=0";
+ 
+ℹ️ Astuces
+•	path=/ rend le cookie accessible à toutes les pages du site.
+•	max-age est en secondes (ex : 3600 = 1 heure).
+•	Taille max d’un cookie : 4 Ko environ.
+•	Les cookies ne sont pas sûrs → ne pas y mettre de données sensibles.
+ 
+Souhaites-tu aussi une version prête à enregistrer en .txt ou un exemple réel d’utilisation dans ton projet ?
+

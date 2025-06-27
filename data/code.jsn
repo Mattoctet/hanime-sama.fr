@@ -1,0 +1,30 @@
+[
+  {
+    "code": "abcd1234",
+    "titre": "High School DxD",
+    "cover": "cover/abcd1234.jpg",
+    "type": "anime",
+    "warning": true
+  },
+  {
+    "code": "ananan16",
+    "titre": "Anime 2",
+    "cover": "cover/ananan16.jpg",
+    "type": "anime",
+    "warning": false
+  },
+  {
+    "code": "jjk12345",
+    "titre": "JJK",
+    "cover": "cover/jjk12345.jpg",
+    "type": "anime",
+    "warning": false
+  },
+  {
+    "code": "haitkuda",
+    "titre": "haite kudasai",
+    "cover": "cover/haitkuda.jpg",
+    "type": "manwha",
+    "warning": true
+  }
+]

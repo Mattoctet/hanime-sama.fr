@@ -1,0 +1,6 @@
+| Lecteur  | Conteneur HTML             | Type de contenu              |
+| -------- | -------------------------- | ---------------------------- |
+| lectifr  | `.iframe-lecteur` (iframe) | iframe unique (externe)      |
+| lectimg  | `#lecteur-images` (div)    | plusieurs images             |
+| lectvid  | `.video-lecteur` (video)   | vidéo unique                 |
+| lectview | `#lecteur-set` (div)       | plusieurs iframes verticales |

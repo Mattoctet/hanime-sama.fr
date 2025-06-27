@@ -1,0 +1,43 @@
+{
+  "code": "stopsmo1",
+  "titre": "Stop smoking",
+  "desc": "decription.",
+  "genre": ["genre", "genre", "genre"],
+  "warning": true,
+  "cover": "/cover/stopsmo1.jpg",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 0,
+          "type": "",
+          "titre": "Aperçu",
+          "liens": [
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQRhVn1Pl3rdR6AeMgzn4rNZARwzeOls2aPAsf_S8IMN_J4?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQSzCxjeSR5_QpSUZKoccTIjAWmMLETIdiZxQgLjmqzVPgw?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQRQUxTGNhh1SqcKxK2EIq4zAajKpw9y5UxEulT8CKRSobs?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQS3HBc2Ht26Q51u_Xl1ErkmAUOBaSrqk2WAI1j1-KEwQ4Y?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQSNT_8i2HqiSaNAciq2xScsASkD1hO3EtBwPe7EnVKXyd0?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQQwNwtVt8PLR7GjcVhk1PdhAX42zgqUSfS2ljgC6sFIlDM?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQQoaCL-2FzqQan5XuBM0OUAAcPPl4GVQGNCDtXkv0YhUpY?width=720&height=4096",
+            "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/IQQFr2Z8FaUFSpTVefdpNsDEASleOl5C12_UWNAvpsgcJK4?width=720&height=1880"
+          ],
+          "lecteur": "viewer",
+          "mode": "vectical"
+        },
+        {
+          "ep": 32,
+          "type": "",
+          "titre": "",
+          "liens": [
+            "/img/manwha/alpha5678/ep2/page1.jpg",
+            "/img/manwha/alpha5678/ep2/page2.jpg"
+          ],
+          "lecteur": "viewer",
+          "mode": "vertical"
+        }
+      ]
+    }
+  ]
+}

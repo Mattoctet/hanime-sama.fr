@@ -1,0 +1,16 @@
+[
+  { 
+    "code": "jjk12345", 
+    "titre": "Jujutsu Kaisen", 
+    "cover": "cover/jjk12345.jpg",
+    "type": "anime",
+    "warning": false
+  },
+  { 
+    "code": "stopsmo1", 
+    "titre": "Stop smoking",
+    "cover": "cover/stopsmo1.jpg", 
+    "type": "manwha",
+    "warning": true
+  }
+]

@@ -1,0 +1,16 @@
+.btn-remonter {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;    /* taille petite */
+  height: 30px;
+  cursor: pointer;
+  display: none;   /* cachée par défaut */
+  opacity: 0.7;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.btn-remonter:hover {
+  opacity: 1;
+}

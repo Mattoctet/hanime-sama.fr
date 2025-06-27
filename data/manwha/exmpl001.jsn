@@ -1,0 +1,38 @@
+{
+  "code": "stopsmo1",
+  "titre": "Stop smoking",
+  "desc": "decription.",
+  "genre": ["genre", "genre", "genre"],
+  "warning": true,
+  "cover": "/cover/stopsmo1.jpg",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 31,
+          "type": "",
+          "titre": "",
+          "liens": [
+            "https://toonfr.com/wp-content/uploads/WP-manga/data/manga_674a397e6e3b9/2d5318108bff64d94edf95ca8951eb9f/001.jpg",
+            "https://toonfr.com/wp-content/uploads/WP-manga/data/manga_674a397e6e3b9/2d5318108bff64d94edf95ca8951eb9f/002.jpg",
+            "https://1drv.ms/u/c/7ebd6c0aac94f3f4/IQRV78NaPfXvRqZnV9-BxRVlARI1rmY_R_l0nDRO-0eJUqc"
+          ],
+          "lecteur": "viewer",
+          "mode": "vectical"
+        },
+        {
+          "ep": 32,
+          "type": "",
+          "titre": "",
+          "liens": [
+            "/img/manwha/alpha5678/ep2/page1.jpg",
+            "/img/manwha/alpha5678/ep2/page2.jpg"
+          ],
+          "lecteur": "image",
+          "mode": "doublepage"
+        }
+      ]
+    }
+  ]
+}

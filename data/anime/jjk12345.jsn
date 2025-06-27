@@ -1,0 +1,78 @@
+{
+  "code": "ananan16",
+  "titre": "jjk",
+  "desc": "Un anime populaire rempli d'action et d'humour.",
+  "genre": ["action", "ecchi", "fantastique"],
+  "warning": false,
+  "cover": "/cover/jjk12345.jpg",
+  "lecteur": "iframe",
+  "saisons": [
+    {
+      "saison": 1,
+      "nom": "Saison 1",
+      "episodes": {
+        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+        "titre": ["", ""],
+        "type": ["", ""],
+        "lien": {
+          "Serveur 1": {
+            "lien": [
+              "https://video.sibnet.ru/shell.php?videoid=4667514",
+              "https://video.sibnet.ru/shell.php?videoid=4667523",
+              "https://video.sibnet.ru/shell.php?videoid=4667532",
+              "https://video.sibnet.ru/shell.php?videoid=4667548",
+              "https://video.sibnet.ru/shell.php?videoid=4667557",
+              "https://video.sibnet.ru/shell.php?videoid=4667566",
+              "https://video.sibnet.ru/shell.php?videoid=4667578",
+              "https://video.sibnet.ru/shell.php?videoid=4667599",
+              "https://video.sibnet.ru/shell.php?videoid=4667621",
+              "https://video.sibnet.ru/shell.php?videoid=4667634",
+              "https://video.sibnet.ru/shell.php?videoid=4667642",
+              "https://video.sibnet.ru/shell.php?videoid=4667648",
+              "https://video.sibnet.ru/shell.php?videoid=4667656",
+              "https://video.sibnet.ru/shell.php?videoid=4667663",
+              "https://video.sibnet.ru/shell.php?videoid=4667667",
+              "https://video.sibnet.ru/shell.php?videoid=4667673",
+              "https://video.sibnet.ru/shell.php?videoid=4667683",
+              "https://video.sibnet.ru/shell.php?videoid=4667689",
+              "https://video.sibnet.ru/shell.php?videoid=4667696",
+              "https://video.sibnet.ru/shell.php?videoid=4667717",
+              "https://video.sibnet.ru/shell.php?videoid=4667725",
+              "https://video.sibnet.ru/shell.php?videoid=4667735",
+              "https://video.sibnet.ru/shell.php?videoid=4667746",
+              "https://video.sibnet.ru/shell.php?videoid=4667756"
+            ]
+          },
+          "Serveur 2": {
+            "lien": [
+              "https://sendvid.com/embed/g6zmqnsf",
+              "https://sendvid.com/embed/qg2vbfam",
+              "https://sendvid.com/embed/76wtzil1",
+              "https://sendvid.com/embed/2q1y8ec7",
+              "https://sendvid.com/embed/dlz7nl4n",
+              "https://sendvid.com/embed/mj83fr9m",
+              "https://sendvid.com/embed/otsog419",
+              "https://sendvid.com/embed/3ifovb3e",
+              "https://sendvid.com/embed/4i4curvz",
+              "https://sendvid.com/embed/30lbi2fl",
+              "https://sendvid.com/embed/f3071f29",
+              "https://sendvid.com/embed/fqjgqgzr",
+              "https://sendvid.com/embed/6zzzue8o",
+              "https://sendvid.com/embed/cdlh6awa",
+              "https://sendvid.com/embed/6uam2dad",
+              "https://sendvid.com/embed/bryqucpz",
+              "https://sendvid.com/embed/msul45pc",
+              "https://sendvid.com/embed/252sx7a9",
+              "https://sendvid.com/embed/2qtjrd0w",
+              "https://sendvid.com/embed/pxfxne05",
+              "https://sendvid.com/embed/lm8vbajm",
+              "https://sendvid.com/embed/qxa3u3tu",
+              "https://sendvid.com/embed/zbwl4seu",
+              "https://sendvid.com/embed/pgrewgwq"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

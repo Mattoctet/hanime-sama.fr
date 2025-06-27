@@ -1,0 +1,91 @@
+Structure du projet hanime-sama.
+/
+├── anime/
+│   ├── index.htm
+│   └── code/
+│       └── code_anime.htm
+│
+├── code/
+│   └── code.htm //expliquer dans le fichier
+│
+├── cover/
+│   ├── abcd1234.jpg
+│   ├── ananan16.jpg
+│   ├── haitkuda.jpg
+│   ├── jjk12345.jpg
+│   └── stopsmo1.jpg
+│
+├── css/
+│   ├── 404.css
+│   ├── remonte.css
+│   ├── style.css
+│   ├── ordi/
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── home.css
+│   │   ├── media.css
+│   │   ├── style.css
+│   │   └── warning.css
+│   │
+│   └── tel/
+│       ├── footer.css
+│       ├── header.css
+│       ├── home.css
+│       ├── media.css
+│       ├── style.css
+│       └── warning.css
+│
+├── data/
+│   ├── code.jsn
+│   ├── popular.jsn
+│   ├── recent.jsn
+│   ├── anime/
+│   │   ├── footer.jsn
+│   │   └── warning.jsn
+│   │
+│   ├── manga/
+│   │   ├── footer.jsn
+│   │   └── warning.jsn
+│   │
+│   ├── manwha/
+│   │   ├── footer.jsn
+│   │   └── warning.jsn
+│   │
+│   └── scan/
+│       ├── footer.jsn
+│       └── warning.jsn
+│
+├── js/
+│   ├── anime.js
+│   ├── dispCode.js
+│   ├── header.js
+│   ├── homepage.js
+│   ├── lecteuri.js
+│   ├── loadCSS.js
+│   ├── manga.js
+│   └── manwha.js
+│
+├── manwha/
+│   ├── index.htm
+│   └── code/
+│       └── code_manwha.htm
+│
+├── partials/
+│   └── lecteuri.htm
+│
+├── manga/
+│   ├── index.htm
+│   └── code/
+│       └── code_manga.htm
+│
+├── notes/   
+│   ├── organisation.txt
+│   ├── projet.txt
+│   └── README.md
+│
+├── 404.htm
+├── extension.py
+├── footer.htm //a finir
+├── header.htm
+├── index.htm
+├── report.htm //a faire

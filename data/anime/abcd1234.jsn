@@ -1,0 +1,140 @@
+{
+  "code": "abcd1234",
+  "titre": "High School DxD",
+  "desc": "Un anime populaire rempli d'action et d'humour.",
+  "genre": ["action", "ecchi", "fantastique"],
+  "warning": true,
+  "cover": "/cover/abcd1234.jpg",
+  "lecteur": "iframe",
+  "saisons": [
+    {
+      "saison": 1,
+      "nom": "Saison 1 : High School DxD (2012)",
+      "episodes": {
+        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+        "type": ["", "", "", "", "", "", "", "", "", "", "", "", "OAV 1", "OAV 2", "spécial 1", "spécial 2", "spécial 3", "spécial 4", "spécial 5", "spécial 6"],
+        "titre": [
+          "J'ai une petite amie !",
+          "Je ne suis désormais plus humain !",
+          "Je me suis fait un nouvel ami !",
+          "Sauve mon ami !",
+          "Vaincre mon ex‑petite amie !",
+          "Je suis un Démon professionnel !",
+          "Mon familier à moi !",
+          "L'art de la dispute !",
+          "Mon entraînement commence !",
+          "La guerre commence !",
+          "C’est vraiment la guerre !",
+          "Je suis venu tenir ma promesse !",
+          "La floraison des seins !",
+          "J'aimerais des seins !",
+          "Bronzette au soleil",
+          "L'entraînement privé d’Akeno‑senpai",
+          "Koneko va un peu trop loin… Miaou",
+          "L’histoire secrète du Dress Break",
+          "Fabrication d’udon",
+          "Asia se transforme"
+        ],
+        "lien": {
+          "Serveur 1": {
+            "lien": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+            "lecteur": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+          }
+        }
+      }
+    },
+    {
+      "saison": 2,
+      "nom": "Saison 2 : High School DxD New (2013)",
+      "episodes": {
+        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+        "type": ["", "", "", "", "", "", "", "", "", "", "", "", "", "OAV"],
+        "titre": [
+          "Une fois de plus, une prémonition troublante !",
+          "Voilà les Épées sacrées !",
+          "Je détruirai les Épées sacrées !",
+          "Un incroyable ennemi apparaît !",
+          "Bataille décisive au lycée Kuô !",
+          "Allez, le club d’occultisme !",
+          "Été, maillots de bain, et danger !",
+          "La journée d’observation !",
+          "J’ai un kohai !",
+          "Problèmes hiérarchiques !",
+          "La réunion des chefs commence !",
+          "Le combat des deux dragons célestes !",
+          "Seins, rebondissez !",
+          "OAV spécial"
+        ],
+        "lien": {
+          "Serveur 1": {
+            "lien": ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+            "lecteur": ["", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+          }
+        }
+      }
+    },
+    {
+      "saison": 3,
+      "nom": "Saison 3 : High School DxD BorN (2015)",
+      "episodes": {
+        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+        "type": ["", "", "", "", "", "", "", "", "", "", "", "", "OAV", "spécial", "spécial", "spécial", "spécial", "spécial"],
+        "titre": [
+          "C’est l’été ! Direction les Enfers !",
+          "Jeunes démons, rassemblement !",
+          "Chat et dragon",
+          "Que la contre‑attaque commence !",
+          "C’est la fin des vacances !",
+          "Le 2ᵉ trimestre a commencé !",
+          "C’est la veille du tournoi !",
+          "Je sauverai Asia !",
+          "Le Dragon des dragons",
+          "La fin du club de recherches occultes !",
+          "Je vais me battre !",
+          "Toujours et pour l’éternité !",
+          "Le Phoenix mortel",
+          "Short bonus 1",
+          "Short bonus 2",
+          "Short bonus 3",
+          "Short bonus 4",
+          "Short bonus 5"
+        ],
+        "lien": {
+          "Serveur 1": {
+            "lien": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+            "lecteur": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+          }
+        }
+      }
+    },
+    {
+      "saison": 4,
+      "nom": "Saison 4 : High School DxD Hero (2018)",
+      "episodes": {
+        "ep": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "type": ["spécial", "", "", "", "", "", "", "", "", "", "", "", ""],
+        "titre": [
+          "La sainte dans le gymnase",
+          "C’est vrai, allons à Kyoto",
+          "Voyage scolaire, une attaque abrupte",
+          "Le parti des héros",
+          "Épreuve de force ! Famille Gremory vs faction de héros à Kyoto",
+          "Mon potentiel libéré",
+          "Le voyage scolaire est à Pandemonium",
+          "Nous préparons le festival scolaire !",
+          "Le cœur d’une fille est compliqué",
+          "La bataille décisive de la jeunesse la plus forte commence !",
+          "En tant que membre de la famille de Rias Gremory",
+          "Vie MAX vs puissance MAX, homme contre homme",
+          "Vie Maximum vs puissance Maximum – Festival de l’école"
+        ],
+        "lien": {
+          "Serveur 1": {
+            "lien": ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+            "lecteur": ["", "", "", "", "", "", "", "", "", "", "", "", ""]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!-- FICHIER : /warning.htm -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avertissement</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .warning-box {
+      max-width: 500px;
+      padding: 2em;
+      background: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    }
+    .warning-box h1 {
+      color: #ff4444;
+    }
+    .warning-box p {
+      margin-bottom: 2em;
+    }
+    .warning-box button {
+      background: #ff4444;
+      color: #fff;
+      border: none;
+      padding: 1em 2em;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .warning-box button:hover {
+      background: #ff2222;
+    }
+  </style>
+</head>
+<body>
+  <div class="warning-box">
+    <h1>Contenu sensible</h1>
+    <p>Ce contenu peut ne pas convenir à tous les publics.<br>Souhaitez-vous continuer ?</p>
+    <button id="btn-continuer">Continuer</button>
+  </div>
+
+  <script>
+    document.getElementById("btn-continuer").addEventListener("click", () => {
+      const cible = new URLSearchParams(window.location.search).get("cible");
+      const code = new URLSearchParams(window.location.search).get("code");
+      const lien = `${cible}?code=${code}`;
+      if (code) {
+        location.href = `/${cible}?code=${code}`;
+      } else {
+        location.href = `/${cible}`;
+      }
+    });
+  </script>
+</body>
+</html>

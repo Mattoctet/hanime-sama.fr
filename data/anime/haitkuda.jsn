@@ -1,0 +1,34 @@
+{
+  "code": "haitkuda",
+  "titre": "Haite Kudasai",
+  "desc": "Un anime populaire rempli d'action et d'humour.",
+  "genre": ["action", "ecchi", "fantastique"],
+  "warning": true,
+  "cover": "/cover/gngngn12.jpg",
+  "lecteur": "iframe",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 1,
+          "titre": "",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQRi70-pelyjT5iYOMnYFDGuAaYn7HgVlV-M4VzHgCFyM0E?width=1920&height=1080",
+          "lecteur": "iframe"
+        },
+        {
+          "ep": 2,
+          "titre": "",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQStxSNV-FJ8Sahrjt9xQdAtAVns9enKmCe3CsLwa5E93jU?width=1920&height=1080",
+          "lecteur": "iframe"
+        },
+        {
+          "ep": 3,
+          "titre": "",
+          "lien": "https://1drv.ms/v/c/7ebd6c0aac94f3f4/IQSdRcgtUn0OTaHTZdjWWhZpASYJCD2MxNZGr2jYpdZM6bc?width=1920&height=1080",
+          "lecteur": "iframe"
+        }
+      ]
+    }
+  ]
+}

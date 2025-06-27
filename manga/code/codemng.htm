@@ -1,0 +1,47 @@
+<!-- /manga/codemng.htm -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Détail Manga</title>
+
+  <script src="/js/loadcss.js" defer></script>
+  <script src="/js/dispmng.js" defer></script>
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <script>
+    fetch("/header.htm")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-container").innerHTML = html;
+      })
+      .then(() => import("/js/header.js"))
+      .catch(err => console.error("Erreur de chargement du header :", err));
+  </script>
+
+  <main>
+    <div id="fiche"></div>
+    <div id="menu-episodes"></div>
+    <div id="lecteur"></div>
+    <div id="navig"></div>
+  </main>
+
+  <footer>
+    <p>hanime-sama.fr © 2025</p>
+  </footer>
+
+  <div id="remonte-container"></div>
+  <script>
+    fetch("/part/remonte.htm")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("remonte-container").innerHTML = html;
+      })
+      .then(() => import("/js/remonte.js"))
+      .catch(err => console.error("Erreur chargement remonte :", err));
+  </script>
+</body>
+</html>

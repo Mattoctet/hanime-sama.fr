@@ -1,0 +1,60 @@
+{
+  "code": "abcd1234",
+  "titre": "High School DxD",
+  "desc": "Un anime populaire rempli d'action et d'humour.",
+  "genre": ["action", "ecchi", "fantastique"],
+  "warning": true,
+  "cover": "/cover/abcd1234.jpg",
+  "lecteur": "iframe",
+  "saisons": [
+    {
+      "saison": 1,
+      "nom": "Saison 1 : High School DxD (2012)",
+      "episodes": {
+        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+        "type": ["", "", "", "", "", "", "", "", "", "", "", "", "OAV 1", "OAV 2", "spécial 1", "spécial 2", "spécial 3", "spécial 4", "spécial 5", "spécial 6"],
+        "titre": [
+          "J'ai une petite amie !",
+          "Je ne suis désormais plus humain !",
+          "Je me suis fait un nouvel ami !",
+          "Sauve mon ami !",
+          "Vaincre mon ex‑petite amie !",
+          "Je suis un Démon professionnel !",
+          "Mon familier à moi !",
+          "L'art de la dispute !",
+          "Mon entraînement commence !",
+          "La guerre commence !",
+          "C’est vraiment la guerre !",
+          "Je suis venu tenir ma promesse !",
+          "La floraison des seins !",
+          "J'aimerais des seins !",
+          "Bronzette au soleil",
+          "L'entraînement privé d’Akeno‑senpai",
+          "Koneko va un peu trop loin… Miaou",
+          "L’histoire secrète du Dress Break",
+          "Fabrication d’udon",
+          "Asia se transforme"
+        ],
+        "lien": [
+            
+            "https://sendvid.com/embed/6qa4267k",
+            "https://sendvid.com/embed/tfx9v7r3",
+            "https://sendvid.com/embed/h11z3j32",
+            "https://sendvid.com/embed/n1xo80vs",
+            "https://sendvid.com/embed/1y802isb",
+            "https://sendvid.com/embed/4k0yidde",
+            "https://sendvid.com/embed/vatag1un",
+            "https://sendvid.com/embed/znqjfqnd",
+            "https://sendvid.com/embed/fvizh0n8",
+            "https://sendvid.com/embed/nqsrjmnf",
+            "https://sendvid.com/embed/k40nvfcb",
+            "https://sendvid.com/embed/8zy0410u"
+        ],
+        "lecteur": [
+          "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe",
+          "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe"
+        ]
+      }
+    },
+  ]
+}

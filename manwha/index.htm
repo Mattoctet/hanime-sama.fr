@@ -1,0 +1,51 @@
+<!-- /manwha/index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liste des Manwha</title>
+
+  <script src="/js/loadcss.js" defer></script>
+  <script src="/js/indexmnw.js" defer></script>
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <script>
+    fetch("/header.htm")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-container").innerHTML = html;
+      })
+      .then(() => import("/js/header.js"))
+      .catch(err => console.error("Erreur de chargement du header :", err));
+  </script>
+
+  <main>
+    <h2>Liste des Manwha</h2>
+    <div id="liste"></div>
+  </main>
+
+  <footer>
+        <p>hanime-sama.fr © 2025</p>
+    </footer>
+
+<div id="remonte-container"></div>
+<script>
+  fetch("/part/remonte.htm")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("remonte-container").innerHTML = html;
+    })
+    .then(() => import("/js/remonte.js"))
+    .then(() => {
+      // Charger dynamiquement le CSS remonte.css
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/css/remonte.css'; // adapte le chemin si besoin
+      document.head.appendChild(link);
+    });
+</script>
+</body>
+</html>

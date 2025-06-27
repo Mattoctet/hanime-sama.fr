@@ -1,0 +1,34 @@
+{
+  "code": "beta9999",
+  "titre": "One Piece",
+  "desc": "Les aventures de Luffy à la recherche du trésor ultime.",
+  "genre": ["action", "aventure", "comédie"],
+  "warning": true,
+  "cover": "/img/beta9999.jpg",
+  "saisons": [
+    {
+      "saison": 1,
+      "episodes": [
+        {
+          "ep": 1,
+          "titre": "Je suis Luffy",
+          "liens": [
+            "/img/manga/beta9999/ep1/page1.jpg",
+            "/img/manga/beta9999/ep1/page2.jpg",
+            "/img/manga/beta9999/ep1/page3.jpg"
+          ],
+          "lecteur": "images"
+        },
+        {
+          "ep": 2,
+          "titre": "Le départ",
+          "liens": [
+            "/img/manga/beta9999/ep2/page1.jpg",
+            "/img/manga/beta9999/ep2/page2.jpg"
+          ],
+          "lecteur": "images"
+        }
+      ]
+    }
+  ]
+}
