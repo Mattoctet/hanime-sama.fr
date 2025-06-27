@@ -31,9 +31,10 @@ function populateSection(containerId, items) {
 
     let ciblePath;
     switch (item.type) {
-      case "anime": ciblePath = "anime/code/codeani.htm"; break;
-      case "manga": ciblePath = "manga/code/codemng.htm"; break;
-      case "manwha": ciblePath = "manwha/code/codemnw.htm"; break;
+      case "anime": ciblePath = "hanime-sama.fr/anime/code/codeani.htm"; break;
+      case "manga": ciblePath = "hanime-sama.fr/manga/code/codemng.htm"; break;
+      case "manwha": ciblePath = "hanime-sama.fr/manwha/code/codemnw.htm"; break;
+      case "scan": ciblePath = "hanime-sama.fr/scan/code/codescan.htm"; break;
       default: ciblePath = null;
     }
 
@@ -46,10 +47,10 @@ function populateSection(containerId, items) {
     }
 
     if (item.warning === true || item.warning === "true") {
-      const url = `/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
+      const url = `hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
       location.href = url;
     } else {
-      const url = `/${ciblePath}?code=${encodeURIComponent(item.code)}`;
+      const url = `hanime-sama.fr/${ciblePath}?code=${encodeURIComponent(item.code)}`;
       location.href = url;
     }
   };
