@@ -53,22 +53,22 @@
         </section>
     </main>
 
-    <iframe src="hanime-sama.fr//footer.htm"></iframe>
+    <iframe src="hanime-sama.fr/footer.htm"></iframe>
 
-    <script src="hanime-sama.fr//js/homepage.js"></script>
+    <script src="hanime-sama.fr/js/homepage.js"></script>
 <div id="remonte-container"></div>
 <script>
-  fetch("hanime-sama.fr//part/remonte.htm")
+  fetch("hanime-sama.fr/part/remonte.htm")
     .then(res => res.text())
     .then(html => {
       document.getElementById("remonte-container").innerHTML = html;
     })
-    .then(() => import("/js/remonte.js"))
+    .then(() => import("hanime-sama.fr/js/remonte.js"))
     .then(() => {
       // Charger dynamiquement le CSS remonte.css
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = '/css/remonte.css'; // adapte le chemin si besoin
+      link.href = 'hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
       document.head.appendChild(link);
     });
 </script>
