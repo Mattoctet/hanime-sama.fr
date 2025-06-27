@@ -5,7 +5,7 @@ console.log('// FICHIER : js/loadcss.js');
   ['header.css', 'style.css', 'media.css', 'home.css', 'footer.css'].forEach(nom => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = `/css/${dossier}/${nom}`; // CHEMIN ABSOLU
+    link.href = `hanime-sama.fr//css/${dossier}/${nom}`; // CHEMIN ABSOLU
     document.head.appendChild(link);
   });
 })();
