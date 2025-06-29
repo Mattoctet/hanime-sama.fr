@@ -3,7 +3,7 @@ console.log('// FICHIER : js/homepage.js');
 
 document.addEventListener("DOMContentLoaded", () => {
   // Chargement des récents
-  fetch("/data/recent.jsn")
+  fetch("/hanime-sama.fr/data/recent.jsn")
     .then(res => res.json())
     .then(data => {
       populateSection("recent", data);
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Erreur chargement recent.jsn :", err));
 
   // Chargement des populaires
-  fetch("/data/popular.jsn")
+  fetch("/hanime-sama.fr/data/popular.jsn")
     .then(res => res.json())
     .then(data => {
       populateSection("popular", data);
@@ -47,10 +47,10 @@ function populateSection(containerId, items) {
     }
 
     if (item.warning === true || item.warning === "true") {
-      const url = `hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
+      const url = `/hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
       location.href = url;
     } else {
-      const url = `hanime-sama.fr/${ciblePath}?code=${encodeURIComponent(item.code)}`;
+      const url = `/hanime-sama.fr/${ciblePath}?code=${encodeURIComponent(item.code)}`;
       location.href = url;
     }
   };
