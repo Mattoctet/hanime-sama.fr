@@ -22,7 +22,7 @@
     </div>
 
     <script>
-    fetch("https://mattoctet.github.io/hanime-sama.fr/header.htm")
+    fetch("/hanime-sama.fr/header.htm")
     .then(res => {
       if (!res.ok) throw new Error("Header non trouvé");
       return res.text();
@@ -30,7 +30,7 @@
     .then(html => {
       document.getElementById("header-container").innerHTML = html;
     })
-    .then(() => import("https://mattoctet.github.io/hanime-sama.fr/js/header.js"))
+    .then(() => import("/hanime-sama.fr/js/header.js"))
     .catch(err => {
       document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
     })
@@ -53,22 +53,22 @@
         </section>
     </main>
 
-    <iframe src="https://mattoctet.github.io/hanime-sama.fr/footer.htm"></iframe>
+    <iframe src="/hanime-sama.fr/footer.htm"></iframe>
 
-    <script src="v/js/homepage.js"></script>
+    <script src="/hanime-sama.fr/js/homepage.js"></script>
 <div id="remonte-container"></div>
 <script>
-  fetch("https://mattoctet.github.io/hanime-sama.fr/part/remonte.htm")
+  fetch("/hanime-sama.fr/part/remonte.htm")
     .then(res => res.text())
     .then(html => {
       document.getElementById("remonte-container").innerHTML = html;
     })
-    .then(() => import("https://mattoctet.github.io/hanime-sama.fr/js/remonte.js"))
+    .then(() => import("/hanime-sama.fr/js/remonte.js"))
     .then(() => {
       // Charger dynamiquement le CSS remonte.css
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = 'https://mattoctet.github.io/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
+      link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
       document.head.appendChild(link);
     });
 </script>
