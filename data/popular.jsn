@@ -2,14 +2,14 @@
   { 
     "code": "abcd1234", 
     "titre": "High School DxD", 
-    "cover": "/cover/abcd1234.jpg",
+    "cover": "cover/abcd1234.jpg",
     "type": "anime",
     "warning": true
   },
   { 
     "code": "haitkuda", 
     "titre": "Haite Kudasai", 
-    "cover": "/cover/haitkuda.jpg",
+    "cover": "cover/haitkuda.jpg",
     "type": "anime",
     "warning": true
   }

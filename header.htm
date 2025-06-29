@@ -1,7 +1,7 @@
 <!-- FICHIER : header.htm -->
 <header>
-  <div id="logo" onclick="location.href='/index.htm';">
-    <img src="/img/logo.png" alt="Logo" />
+  <div id="logo" onclick="location.href='/hanime-sama.fr/index.htm';">
+    <img src="/hanime-sama.fr/img/logo.png" alt="Logo" />
   </div>  
 
   <div id="code-input">
@@ -10,17 +10,17 @@
   </div>
 
   <nav>
-    <div class="nav-item" onclick="location.href='/index.htm';">Accueil</div>
-    <div class="nav-item" onclick="location.href='/anime/index.htm';">Animes</div>
-    <div class="nav-item" onclick="location.href='/manwha/index.htm';">Manhwas</div>
-    <div class="nav-item" onclick="location.href='/manga/index.htm';">Mangas</div>
+    <div class="nav-item" onclick="location.href='/hanime-sama.fr/index.htm';">Accueil</div>
+    <div class="nav-item" onclick="location.href='/hanime-sama.fr/anime/index.htm';">Animes</div>
+    <div class="nav-item" onclick="location.href='/hanime-sama.fr/manwha/index.htm';">Manhwas</div>
+    <div class="nav-item" onclick="location.href='/hanime-sama.fr/manga/index.htm';">Mangas</div>
   </nav>
 
   <script>
     document.getElementById("goBtn").addEventListener("click", function () {
       const code = document.getElementById("codeField").value.trim();
       if (code !== "") {
-        window.location.href = "/anime/codeani.htm?code=" + code;
+        window.location.href = "/hanime-sama.fr/anime/codeani.htm?code=" + code;
       }
     });
   </script>
