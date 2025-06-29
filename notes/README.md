@@ -1,4 +1,5 @@
-# hanime-sama
+# hanime-sama.fr
+https://mattoctet.github.io/hanime-sama.fr/
 
 ## Objectif
 Site pour explorer des animes, manhwas, mangas avec navigation simple.

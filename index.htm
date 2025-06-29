@@ -3,74 +3,84 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
-    <style>
-        body {
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+  </style>
 
 </head>
 
 <body>
-    <div id="header-container">
-        <p>Chargement du header...</p>
-    </div>
+  <div id="header-container">
+    <p>Chargement du header...</p>
+  </div>
 
-    <script>
+  <script>
     fetch("/hanime-sama.fr/header.htm")
-    .then(res => {
-      if (!res.ok) throw new Error("Header non trouvé");
-      return res.text();
-    })
-    .then(html => {
-      document.getElementById("header-container").innerHTML = html;
-    })
-    .then(() => import("/hanime-sama.fr/js/header.js"))
-    .catch(err => {
-      document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
-    })
-    .finally(() => {
-      document.body.style.opacity = "1";
-    });
-</script>
+      .then(res => {
+        if (!res.ok) throw new Error("Header non trouvé");
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById("header-container").innerHTML = html;
+      })
+      .then(() => import("/hanime-sama.fr/js/header.js"))
+      .catch(err => {
+        document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
+      })
+      .finally(() => {
+        document.body.style.opacity = "1";
+      });
+  </script>
 
-    <main>
-        <h1>Bienvenue sur Hanime-sama</h1>
+  <main>
+    <h1>Bienvenue sur Hanime-sama</h1>
 
-        <section class="horizontal-scroll">
-            <h2>Derniers épisodes</h2>
-            <div class="scroll-container" id="recent"></div>
-        </section>
+    <section class="horizontal-scroll">
+      <h2>Derniers épisodes</h2>
+      <div class="scroll-container" id="recent"></div>
+    </section>
 
-        <section class="horizontal-scroll">
-            <h2>Populaires</h2>
-            <div class="scroll-container" id="popular"></div>
-        </section>
-    </main>
+    <section class="horizontal-scroll">
+      <h2>Populaires</h2>
+      <div class="scroll-container" id="popular"></div>
+    </section>
+  </main>
 
-    <iframe src="/hanime-sama.fr/footer.htm"></iframe>
+  <script>
+    fetch("/hanime-sama.fr/footer.htm")
+      .then(res => res.text())
+      .then(() => import("/hanime-sama.fr/js/footer.js"))
+      .then(() => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '/hanime-sama.fr/css/footer.css';
+        document.head.appendChild(link);
+      });
+  </script>
 
-    <script src="/hanime-sama.fr/js/homepage.js"></script>
-<div id="remonte-container"></div>
-<script>
-  fetch("/hanime-sama.fr/part/remonte.htm")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("remonte-container").innerHTML = html;
-    })
-    .then(() => import("/hanime-sama.fr/js/remonte.js"))
-    .then(() => {
-      // Charger dynamiquement le CSS remonte.css
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
-      document.head.appendChild(link);
-    });
-</script>
+  <script src="/hanime-sama.fr/js/homepage.js"></script>
+  <div id="remonte-container"></div>
+  <script>
+    fetch("/hanime-sama.fr/part/remonte.htm")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("remonte-container").innerHTML = html;
+      })
+      .then(() => import("/hanime-sama.fr/js/remonte.js"))
+      .then(() => {
+        // Charger dynamiquement le CSS remonte.css
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
+        document.head.appendChild(link);
+      });
+  </script>
 
 
 </body>

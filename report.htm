@@ -15,7 +15,7 @@
     </div>
 
     <script>
-        fetch("/header.htm")
+        fetch("/hanime-sama.fr/header.htm")
             .then(res => {
                 if (!res.ok) throw new Error("Header non trouvé");
                 return res.text();
@@ -23,38 +23,40 @@
             .then(html => {
                 document.getElementById("header-container").innerHTML = html;
             })
-            .then(() => import("/js/header.js"))
+            .then(() => import("/hanime-sama.fr/js/header.js"))
             .catch(err => {
                 document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
             });
     </script>
 
     <main>
-        <h1>Page repoort</h1>
-
+        <h1>Page report</h1>
+        <p>
+            
+        </p>
     </main>
 
     <footer>
-        <p>hanime-sama.fr © 2025</p><a href="/report.htm">Report</a>
+        <p>hanime-sama.fr © 2025</p><a href="/hanime-sama.fr/report.htm">Report</a>
     </footer>
 
-    <script src="/js/homepage.js"></script>
-<div id="remonte-container"></div>
-<script>
-  fetch("/part/remonte.htm")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("remonte-container").innerHTML = html;
-    })
-    .then(() => import("/js/remonte.js"))
-    .then(() => {
-      // Charger dynamiquement le CSS remonte.css
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = '/css/remonte.css'; // adapte le chemin si besoin
-      document.head.appendChild(link);
-    });
-</script>
+    <script src="/hanime-sama.fr/js/homepage.js"></script>
+    <div id="remonte-container"></div>
+    <script>
+        fetch("/hanime-sama.fr/part/remonte.htm")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("remonte-container").innerHTML = html;
+            })
+            .then(() => import("/hanime-sama.fr/js/remonte.js"))
+            .then(() => {
+                // Charger dynamiquement le CSS remonte.css
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
+                document.head.appendChild(link);
+            });
+    </script>
 
 
 </body>
