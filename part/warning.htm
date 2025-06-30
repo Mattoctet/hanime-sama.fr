@@ -57,10 +57,13 @@
       const cible = new URLSearchParams(window.location.search).get("cible");
       const code = new URLSearchParams(window.location.search).get("code");
       const lien = `${cible}?code=${code}`;
+      console.log('cible : ' + cible);
+      console.log('code : ' + code);
+      console.log('lien : '+ lien);
       if (code) {
-        location.href = `/hanime-sama.fr/${cible}?code=${code}`;
+        location.href = `${lien}`;
       } else {
-        location.href = `/hanime-sama.fr/${cible}`;
+        location.href = `/${cible}`;
       }
     });
   </script>
