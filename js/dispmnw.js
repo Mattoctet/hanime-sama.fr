@@ -94,7 +94,7 @@ function displayData(data) {
 
 function generateLecteur(liens, lecteurType) {
   if (lecteurType === "viewer") {
-    return liens.map((lien) => `<iframe src="${lien}" loading="lazy">`).join("");
+    return liens.map((lien) => `<img src="${lien}" loading="lazy">`).join("");
   }
   return "<p>Lecteur non supporté</p>";
 }
