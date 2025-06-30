@@ -2,14 +2,14 @@
   { 
     "code": "abcd1234", 
     "titre": "High School DxD", 
-    "cover": "cover/abcd1234.jpg",
+    "cover": "/hanime-sama.fr/cover/abcd1234.jpg",
     "type": "anime",
     "warning": true
   },
   { 
     "code": "haitkuda", 
     "titre": "Haite Kudasai", 
-    "cover": "https://1drv.ms/i/c/3EF1D32D0D9FEC5D/EZSC_KTocdNOvlqpiTwzcXQBpD2DAMD0koQtL-0wPnmlQA?e=Aw452F",
+    "cover": "/hanime-sama.fr/cover/haitkuda.jpg",
     "type": "anime",
     "warning": true
   }
