@@ -1,9 +1,9 @@
 // FICHIER : js/indexmng.js
 console.log("// FICHIER : js/indexmng.js");
 
-const basePath = "/data/manga/";
+const basePath = "/hanime-sama.fr/data/manga/";
 
-fetch("/data/code.jsn")
+fetch("/hanime-sama.fr/data/code.jsn")
   .then(res => res.json())
   .then(async data => {
     const container = document.getElementById("liste");
@@ -25,8 +25,8 @@ fetch("/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/part/warning.htm?cible=manga/codemng.htm&code=${entry.code}`
-          : `/manga/codemng.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=manga/codemng.htm&code=${entry.code}`
+          : `/hanime-sama.fr/manga/codemng.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";

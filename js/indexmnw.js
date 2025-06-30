@@ -1,9 +1,9 @@
 // FICHIER : js/indexmnw.js
 console.log("// FICHIER : js/indexmnw.js");
 
-const basePath = "/data/manwha/";
+const basePath = "/hanime-sama.fr/data/manwha/";
 
-fetch("/data/code.jsn")
+fetch("/hanime-sama.fr/data/code.jsn")
   .then(res => res.json())
   .then(async data => {
     const container = document.getElementById("liste");
@@ -25,8 +25,8 @@ fetch("/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/part/warning.htm?cible=manwha/codemnw.htm&code=${entry.code}`
-          : `/manwha/codemnw.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=manwha/codemnw.htm&code=${entry.code}`
+          : `/hanime-sama.fr/manwha/codemnw.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";

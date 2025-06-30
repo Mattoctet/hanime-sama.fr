@@ -17,7 +17,7 @@ fetch(`/hanime-sama.fr/data/anime/${code}.jsn`)
     const fiche = document.getElementById("fiche");
     fiche.innerHTML = `
       <div class="fiche-box">
-        <img src="${data.cover}" alt="cover">
+        <img src="/hanime-sama.fr/cover/${code}.jpg" alt="cover">
         <div class="fiche-right">
           <div class="fiche-info">
             <h1>${data.titre}</h1>

@@ -1,9 +1,9 @@
 // FICHIER : js/indexscan.js
 console.log("// FICHIER : js/indexscan.js");
 
-const basePath = "/data/scan/";
+const basePath = "/hanime-sama.fr/data/scan/";
 
-fetch("/data/code.jsn")
+fetch("/hanime-sama.fr/data/code.jsn")
   .then(res => res.json())
   .then(async data => {
     const container = document.getElementById("liste");
@@ -25,8 +25,8 @@ fetch("/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/part/warning.htm?cible=scan/codescan.htm&code=${entry.code}`
-          : `/scan/codescan.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=scan/codescan.htm&code=${entry.code}`
+          : `/hanime-sama.fr/scan/codescan.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";
