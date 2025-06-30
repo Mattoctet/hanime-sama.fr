@@ -50,7 +50,7 @@ function populateSection(containerId, items) {
       const url = `/hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
       location.href = url;
     } else {
-      const url = `/hanime-sama.fr/${ciblePath}?code=${encodeURIComponent(item.code)}`;
+      const url = `${ciblePath}?code=${encodeURIComponent(item.code)}`;
       location.href = url;
     }
   };
