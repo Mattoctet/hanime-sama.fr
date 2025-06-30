@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Liste des Manwha</title>
 
-  <script src="/js/loadcss.js" defer></script>
-  <script src="/js/indexmnw.js" defer></script>
+  <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
+  <script src="/hanime-sama.fr/js/indexmnw.js" defer></script>
 </head>
 <body>
   <div id="header-container"></div>
 
   <script>
-    fetch("/header.htm")
+    fetch("/hanime-sama.fr/header.htm")
       .then(res => res.text())
       .then(html => {
         document.getElementById("header-container").innerHTML = html;
       })
-      .then(() => import("/js/header.js"))
+      .then(() => import("/hanime-sama.fr/js/header.js"))
       .catch(err => console.error("Erreur de chargement du header :", err));
   </script>
 
@@ -33,17 +33,17 @@
 
 <div id="remonte-container"></div>
 <script>
-  fetch("/part/remonte.htm")
+  fetch("/hanime-sama.fr/part/remonte.htm")
     .then(res => res.text())
     .then(html => {
       document.getElementById("remonte-container").innerHTML = html;
     })
-    .then(() => import("/js/remonte.js"))
+    .then(() => import("/hanime-sama.fr/js/remonte.js"))
     .then(() => {
       // Charger dynamiquement le CSS remonte.css
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = '/css/remonte.css'; // adapte le chemin si besoin
+      link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
       document.head.appendChild(link);
     });
 </script>
