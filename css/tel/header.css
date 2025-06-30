@@ -16,6 +16,10 @@ header {
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
+    height: 60px; /* ou plus si tu veux */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 #code-input {
