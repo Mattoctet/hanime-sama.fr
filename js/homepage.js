@@ -54,7 +54,6 @@ function populateSection(containerId, items) {
       location.href = url;
     }
   };
-
     card.innerHTML = `
       <img src="${item.cover}" alt="${item.titre}">
       <h3>${item.titre}</h3>
