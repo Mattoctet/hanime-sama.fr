@@ -7,7 +7,7 @@ let episodeActuel = parseInt(urlParams.get('e')) || 1;
 let serveurActuel = 'Serveur 1';
 let data;
 
-fetch(`/data/anime/${code}.jsn`)
+fetch(`/hanime-sama.fr/data/anime/${code}.jsn`)
   .then(response => response.json())
   .then(json => {
     data = json;

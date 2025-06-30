@@ -6,7 +6,7 @@ function fetchData(type) {
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get("code");
 
-  fetch(`/data/${type}/${code}.jsn`)
+  fetch(`/hanime-sama.fr/data/${type}/${code}.jsn`)
     .then(res => {
       if (!res.ok) throw new Error("Erreur de chargement");
       return res.json();
