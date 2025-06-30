@@ -31,10 +31,10 @@ function populateSection(containerId, items) {
 
     let ciblePath;
     switch (item.type) {
-      case "anime": ciblePath = "/anime/code/codeani.htm"; break;
-      case "manga": ciblePath = "/manga/code/codemng.htm"; break;
-      case "manwha": ciblePath = "/manwha/code/codemnw.htm"; break;
-      case "scan": ciblePath = "/scan/code/codescan.htm"; break;
+      case "anime": ciblePath = "/hanime-sama.fr/anime/code/codeani.htm"; break;
+      case "manga": ciblePath = "/hanime-sama.fr/manga/code/codemng.htm"; break;
+      case "manwha": ciblePath = "/hanime-sama.fr/manwha/code/codemnw.htm"; break;
+      case "scan": ciblePath = "/hanime-sama.fr/scan/code/codescan.htm"; break;
       default: ciblePath = null;
     }
 
@@ -54,6 +54,7 @@ function populateSection(containerId, items) {
       location.href = url;
     }
   };
+
     card.innerHTML = `
       <img src="${item.cover}" alt="${item.titre}">
       <h3>${item.titre}</h3>
