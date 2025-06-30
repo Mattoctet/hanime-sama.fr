@@ -33,7 +33,7 @@ function populateSection(containerId, items) {
     switch (item.type) {
       case "anime": ciblePath = "/hanime-sama.fr/anime/code/codeani.htm"; break;
       case "manga": ciblePath = "/hanime-sama.fr/manga/code/codemng.htm"; break;
-      case "manwha": ciblePath = "/hanime-sama.fr/manwha/code/codemnw.htm"; break;
+      case "manwha": ciblePath = "hanime-sama.fr/manwha/code/codemnw.htm"; break;
       case "scan": ciblePath = "/hanime-sama.fr/scan/code/codescan.htm"; break;
       default: ciblePath = null;
     }
