@@ -1,15 +1,29 @@
 [
-  { 
-    "code": "jjk12345", 
-    "titre": "Jujutsu Kaisen", 
+  {
+    "code": "abcd1234",
+    "titre": "High School DxD",
+    "cover": "/hanime-sama.fr/cover/abcd1234.jpg",
+    "type": "anime",
+    "warning": true
+  },
+  {
+    "code": "haitkuda",
+    "titre": "Haite Kudasai",
+    "cover": "/hanime-sama.fr/cover/haitkuda.jpg",
+    "type": "anime",
+    "warning": true
+  },
+  {
+    "code": "jjk12345",
+    "titre": "Jujutsu Kaisen",
     "cover": "/hanime-sama.fr/cover/jjk12345.jpg",
     "type": "anime",
     "warning": false
   },
-  { 
-    "code": "stopsmo1", 
+  {
+    "code": "stopsmo1",
     "titre": "Stop smoking",
-    "cover": "/hanime-sama.fr/cover/stopsmo1.jpg", 
+    "cover": "/hanime-sama.fr/cover/stopsmo1.jpg",
     "type": "manwha",
     "warning": true
   }

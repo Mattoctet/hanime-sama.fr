@@ -39,21 +39,21 @@ function populateSection(containerId, items) {
     }
 
     card.onclick = () => {
-    console.log("Warning value for", item.titre, ":", item.warning, typeof item.warning);
+      console.log("Warning value for", item.titre, ":", item.warning, typeof item.warning);
 
-    if (!ciblePath) {
-      alert("Type inconnu pour " + item.titre);
-      return;
-    }
+      if (!ciblePath) {
+        alert("Type inconnu pour " + item.titre);
+        return;
+      }
 
-    if (item.warning === true || item.warning === "true") {
-      const url = `/hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
-      location.href = url;
-    } else {
-      const url = `${ciblePath}?code=${encodeURIComponent(item.code)}`;
-      location.href = url;
-    }
-  };
+      if (item.warning === true || item.warning === "true") {
+        const url = `/hanime-sama.fr/part/warning.htm?cible=${encodeURIComponent(ciblePath)}&code=${encodeURIComponent(item.code)}`;
+        location.href = url;
+      } else {
+        const url = `${ciblePath}?code=${encodeURIComponent(item.code)}`;
+        location.href = url;
+      }
+    };
 
     card.innerHTML = `
       <img src="${item.cover}" alt="${item.titre}">

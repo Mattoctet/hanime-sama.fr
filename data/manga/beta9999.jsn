@@ -2,7 +2,11 @@
   "code": "beta9999",
   "titre": "One Piece",
   "desc": "Les aventures de Luffy à la recherche du trésor ultime.",
-  "genre": ["action", "aventure", "comédie"],
+  "genre": [
+    "action",
+    "aventure",
+    "comédie"
+  ],
   "warning": true,
   "cover": "/hanime-sama.fr/cover/beta9999.jpg",
   "saisons": [

@@ -1,9 +1,9 @@
 // FICHIER : js/indexani.js
 console.log("// FICHIER : js/indexani.js");
 
-const basePath = "/data/anime/";
+const basePath = "/hanime-sama.fr/data/anime/";
 
-fetch("/data/code.jsn")
+fetch("/hanime-sama.fr/data/code.jsn")
   .then(res => res.json())
   .then(async data => {
     const container = document.getElementById("liste");
@@ -25,15 +25,15 @@ fetch("/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/part/warning.htm?cible=anime/codeani.htm&code=${entry.code}`
-          : `/anime/codeani.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=anime/codeani.htm&code=${entry.code}`
+          : `/hanime-sama.fr/anime/codeani.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";
 
         div.innerHTML = `
-          <a href="${lien}">
-            <img src="/${entry.cover}" alt="cover" />
+          <a href="${lien}" class="episode-card">
+            <img src="${entry.cover}" alt="cover" />
             <h3>${entry.titre}</h3>
           </a>
         `;

@@ -2,7 +2,11 @@
   "code": "stopsmo1",
   "titre": "Stop smoking",
   "desc": "decription.",
-  "genre": ["genre", "genre", "genre"],
+  "genre": [
+    "genre",
+    "genre",
+    "genre"
+  ],
   "warning": true,
   "cover": "/hanime-sama.fr/cover/stopsmo1.jpg",
   "saisons": [
