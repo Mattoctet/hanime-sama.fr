@@ -1,198 +1,231 @@
-/*/css/tel/media.css*/
+/* Style général spécifique aux pages détail */
 body {
     background-color: #212121;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 15px 10px;
 }
 
+/* Titre principal */
 h1 {
     color: rgb(175, 175, 175);
-    font-size: 22px;
 }
 
+/* Liste d’animes par grille */
 .anime-list {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 15px;
-    overflow-x: auto;
-    padding-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
+/* Carte d’anime dans les listes */
 .anime-card {
     background-color: #2a2a2a;
     border-radius: 10px;
-    box-shadow: 0 0 12px rgb(175, 175, 175);
-    min-width: 140px;
-    padding: 10px;
+    box-shadow: 0 0 15px rgb(175, 175, 175);
+    width: 220px;
+    padding: 15px;
     text-align: center;
     transition: transform 0.3s;
-    flex-shrink: 0;
 }
 
 .anime-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .anime-card img {
     width: 100%;
+    height: 500px;
     border-radius: 5px;
 }
 
 .anime-card h3 {
-    margin: 10px 0 6px;
+    margin: 12px 0 8px;
     color: rgb(175, 175, 175);
-    font-size: 14px;
+    font-size: 18px;
 }
 
-.fiche-cover {
-  max-width: 200px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-}
-
-.video-lecteur {
-  width: 100%;
-  max-width: 720px;
-  border-radius: 12px;
-  display: block;
-  margin: auto;
-}
-
+/* Bloc fiche */
 .fiche-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  flex-direction: row; /* par défaut image + texte côte à côte */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .fiche-cover {
-  flex: 0 0 250px;
-  max-width: 250px;
+    flex: 0 0 250px;
+    max-width: 250px;
 }
 
 .fiche-cover img {
-  width: 100%;
-  border-radius: 12px;
+    width: 100%;
+    border-radius: 12px;
+    display: block;
 }
 
 .fiche-texte {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .fiche-texte h1 {
-  margin-top: 0;
-  font-size: 1.8rem;
+    margin-top: 0;
+    font-size: 1.8rem;
 }
 
 .fiche-texte p {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
-@media (max-width: 768px) {
-  .fiche-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .fiche-cover, .fiche-texte {
-    max-width: 100%;
-    flex: unset;
-  }
-
-  .fiche-texte {
-    padding: 0.5rem;
-  }
-
-  .fiche-texte h1 {
-    font-size: 1.5rem;
-  }
+/* Lecteurs */
+.video-lecteur, .iframe-lecteur {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 12px;
+    display: block;
+    margin: 1rem auto;
 }
 
+/* Menu d'épisodes */
 #menu-episodes details {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 8px;
-  box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #eee;
 }
 
 #menu-episodes summary {
-  font-weight: 600;
-  font-size: 1.1em;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
-  padding: 8px 12px;
-  border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
 }
 
 .episode-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 8px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
 }
 
 .episode-list li {
-  margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .episode-list button {
-  width: 100%;
-  padding: 14px 16px;
-  font-size: 1em;
-  background-color: rgb(175, 175, 175);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-  text-align: left;
+    width: 100%;
+    text-align: left;
+    padding: 6px 12px;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.episode-list button:hover,
-.episode-list button:focus {
-  background-color: #d0d0d0;
-  outline: none;
+.episode-list button:hover {
+    background-color: #c7c7c7;
 }
 
+/* Navigation */
 #navig {
-  margin-top: 20px;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto;
 }
 
 #navig button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-  padding: 12px 24px;
-  font-weight: 600;
-  font-size: 1em;
-  border-radius: 12px;
-  border: 1.5px solid #999;
-  background-color: #fafafa;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-#navig button:hover {
-  background-color: #ddd;
+#navig button[disabled] {
+    background-color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#navig button:hover:not([disabled]) {
+    background-color: #005fa3;
 }
 
 #navig button img {
-  height: 18px;
-  width: auto;
-  margin: 0 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.fiche-box {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  align-items: flex-start;
+}
+
+.fiche-box img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.fiche-info {
+  flex: 1;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#select-serveur-container {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.select-serveur {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.fiche-warning {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #3a0000;
+  color: #ffaaaa;
+  border-left: 5px solid red;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.selected-episode > button {
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+}
+
+#lecteur img {
+  display: block;
+  width: 50%;
+  justify-content: center;
 }

@@ -1,15 +1,70 @@
-/*/css/tel/home.css*/
+/*/css/tel/style.css*/
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    margin: 0;
+    text-align: left;
+}
+
 main {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 5px;
+    margin: auto 40px;
+}
+
+/* Sections d’accueil avec scroll horizontal */
+.horizontal-scroll {
+    margin: 40px 0;
 }
 
 .horizontal-scroll h2 {
-    font-weight: 600;
-    font-size: 20px;
+    color: rgb(175, 175, 175);
+    margin-left: 30px;
+    font-size: 24px;
 }
 
 .scroll-container {
-    scrollbar-color: rgb(175,175,175) transparent;
+    display: flex;
+    overflow-x: auto;
+    padding: 15px 30px;
+    gap: 20px;
+    scrollbar-width: thin;
+    gap: 20px;
+}
+
+/* Cartes d'épisodes (accueil) */
+.episode-card {
+    min-width: 250px;
+    height: 200;
+    background-color: #2a2a2a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgb(175, 175, 175);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.episode-card img {
+    width: 250px;
+    height: 365px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.episode-card h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+}
+
+.episode-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(175, 175, 175);
 }

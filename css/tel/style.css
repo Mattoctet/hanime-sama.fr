@@ -1,43 +1,50 @@
-/*/css/tel/style.css*/
+/*/css/ordi/style.css*/
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     background-color: #212121;
     margin: 0;
-    padding: 10px 15px;
-    text-align: center;
+    text-align: left;
 }
 
+main {
+    margin: auto 40px;
+}
+
+/* Sections d’accueil avec scroll horizontal */
 .horizontal-scroll {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .horizontal-scroll h2 {
     color: rgb(175, 175, 175);
-    margin-left: 0;
-    font-size: 18px;
+    margin-left: 30px;
+    font-size: 24px;
 }
 
 .scroll-container {
     display: flex;
     overflow-x: auto;
-    padding: 10px 10px;
-    gap: 12px;
+    padding: 15px 30px;
+    gap: 20px;
     scrollbar-width: thin;
+    gap: 20px;
 }
 
+/* Cartes d'épisodes (accueil) */
 .episode-card {
-    min-width: 140px;
-    height: 200px;
+    min-width: 250px;
+    height: 200;
     background-color: #2a2a2a;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 10px;
+    border-radius: 15px;
     flex-shrink: 0;
-    box-shadow: 0 0 12px rgb(175, 175, 175);
-    padding: 10px;
+    box-shadow: 0 0 15px rgb(175, 175, 175);
+    padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -45,15 +52,15 @@ body {
 }
 
 .episode-card img {
-    width: 100%;
-    height: 80px;
+    width: 250px;
+    height: 365px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .episode-card h3 {
-    margin-top: 8px;
-    font-size: 14px;
+    margin-top: 12px;
+    font-size: 18px;
     color: rgb(175, 175, 175);
 }
 

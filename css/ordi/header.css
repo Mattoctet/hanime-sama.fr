@@ -20,7 +20,6 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
-}
 
 #logo img {
   height: 100px;       /* plus grand que le conteneur pour "rogner" */
