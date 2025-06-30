@@ -25,8 +25,8 @@ fetch("/hanime-sama.fr/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/hanime-sama.fr/part/warning.htm?cible=anime/codeani.htm&code=${entry.code}`
-          : `/hanime-sama.fr/anime/codeani.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=/hanime-sama.fr/anime/code/codeani.htm&code=${entry.code}`
+          : `/hanime-sama.fr/anime/code/codeani.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";

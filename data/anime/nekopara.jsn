@@ -36,24 +36,34 @@
           "Asia se transforme"
         ],
         "lien": [
-            "https://sendvid.com/embed/6qa4267k",
-            "https://sendvid.com/embed/tfx9v7r3",
-            "https://sendvid.com/embed/h11z3j32",
-            "https://sendvid.com/embed/n1xo80vs",
-            "https://sendvid.com/embed/1y802isb",
-            "https://sendvid.com/embed/4k0yidde",
-            "https://sendvid.com/embed/vatag1un",
-            "https://sendvid.com/embed/znqjfqnd",
-            "https://sendvid.com/embed/fvizh0n8",
-            "https://sendvid.com/embed/nqsrjmnf",
-            "https://sendvid.com/embed/k40nvfcb",
-            "https://sendvid.com/embed/8zy0410u"
+          "https://sendvid.com/embed/6qa4267k",
+          "https://sendvid.com/embed/tfx9v7r3",
+          "https://sendvid.com/embed/h11z3j32",
+          "https://sendvid.com/embed/n1xo80vs",
+          "https://sendvid.com/embed/1y802isb",
+          "https://sendvid.com/embed/4k0yidde",
+          "https://sendvid.com/embed/vatag1un",
+          "https://sendvid.com/embed/znqjfqnd",
+          "https://sendvid.com/embed/fvizh0n8",
+          "https://sendvid.com/embed/nqsrjmnf",
+          "https://sendvid.com/embed/k40nvfcb",
+          "https://sendvid.com/embed/8zy0410u"
         ],
         "lecteur": [
-          "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe",
-          "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe", "iframe"
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       }
-    },
+    }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "code": "&code&",
+  "titre": "&titre&",
+  "desc": "&descrition&",
+  "genre": [
+    "&genre1&",
+    "&genre2&",
+    "&genre3&"
+  ],
+  "warning": &true&|&false&,
+  "cover": "/hanime-sama.fr/cover/&code&.jpg",
+  "lecteur": "&iframe&|&video&",
+  "saisons": [
+    {
+      "saison": 1,
+      "nom": "Saison 1 : High School DxD (2012)",
+      "episodes": {
+        "ep": [
+          12
+        ],
+        "type": [
+          ""
+        ],
+        "titre": [
+          ""
+        ],
+        "lien": {
+          "Serveur 1": {
+            "lien": [
+              ""
+            ],
+            "lecteur": [
+              ""
+            ]
+          }
+        }
+      }
+    },
+  ]
+}

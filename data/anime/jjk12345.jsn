@@ -2,7 +2,11 @@
   "code": "ananan16",
   "titre": "jjk",
   "desc": "Un anime populaire rempli d'action et d'humour.",
-  "genre": ["action", "ecchi", "fantastique"],
+  "genre": [
+    "action",
+    "ecchi",
+    "fantastique"
+  ],
   "warning": false,
   "cover": "/hanime-sama.fr/cover/jjk12345.jpg",
   "lecteur": "iframe",
@@ -11,9 +15,40 @@
       "saison": 1,
       "nom": "Saison 1",
       "episodes": {
-        "ep": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-        "titre": ["", ""],
-        "type": ["", ""],
+        "ep": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "titre": [
+          "",
+          ""
+        ],
+        "type": [
+          "",
+          ""
+        ],
         "lien": {
           "Serveur 1": {
             "lien": [
