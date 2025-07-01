@@ -56,7 +56,7 @@ function populateSection(containerId, items) {
     };
 
     card.innerHTML = `
-      <div ${item.warning ? ' class="episode-card fiche-warning"' : 'class="episode-card"'}>
+      <div ${item.warning ? ' class="episode-card-warning"' : 'class="episode-card"'}>
         <img src="/hanime-sama.fr/cover/${item.code}.jpg" alt="${item.titre}">
         <h2>${item.titre} - ${item.type}</h2>
         <h3>${item.genre.join(", ")}</h3>
