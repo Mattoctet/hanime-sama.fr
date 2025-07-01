@@ -29,4 +29,3 @@ document.cookie = "dernierCode=; path=/; max-age=0";
 •	Les cookies ne sont pas sûrs → ne pas y mettre de données sensibles.
  
 Souhaites-tu aussi une version prête à enregistrer en .txt ou un exemple réel d’utilisation dans ton projet ?
-

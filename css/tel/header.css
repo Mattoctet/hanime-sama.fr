@@ -23,7 +23,7 @@ header {
     align-items: center;
 }
 
-#code-input {
+#code-input { 
     width: 100%;
     display: flex;
     gap: 8px;

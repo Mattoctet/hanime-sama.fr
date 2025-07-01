@@ -47,7 +47,7 @@ main {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    cursor: pointer; 
     margin-bottom: 20px;
 }
 

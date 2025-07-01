@@ -209,12 +209,11 @@ h1 {
 }
 
 .fiche-warning {
-  margin-top: 1rem;
   padding: 1rem;
   background-color: #3a0000;
   color: #ffaaaa;
   border-left: 5px solid red;
-  border-radius: 6px;
+  border-radius: 15px; 
   font-weight: bold;
 }
 

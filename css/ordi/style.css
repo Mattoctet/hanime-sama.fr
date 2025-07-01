@@ -32,6 +32,25 @@ main {
 
 /* Cartes d'épisodes (accueil) */
 .episode-card {
+    width: 250px;
+    height: 502px;
+    background-color: #2a2a2a;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgb(175, 175, 175);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+ 
+.episode-card-standar {
     min-width: 250px;
     height: 200;
     background-color: #2a2a2a;

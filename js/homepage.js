@@ -26,7 +26,7 @@ function populateSection(containerId, items) {
 
   items.forEach(item => {
     const card = document.createElement("div");
-    card.className = "episode-card";
+    //card.className = "episode-card";
     card.style.cursor = "pointer";
 
     let ciblePath;
@@ -56,10 +56,13 @@ function populateSection(containerId, items) {
     };
 
     card.innerHTML = `
-      <img src="/hanime-sama.fr/cover/${item.code}.jpg" alt="${item.titre}">
-      <h2>${item.titre}</h2>
-      <h3>${item.genre.join(", ")}</h3>
+      <div ${item.warning ? ' class="episode-card fiche-warning"' : 'class="episode-card"'}>
+        <img src="/hanime-sama.fr/cover/${item.code}.jpg" alt="${item.titre}">
+        <h2>${item.titre} - ${item.type}</h2>
+        <h3>${item.genre.join(", ")}</h3>
+      </div>
     `;
+
     container.appendChild(card);
   });
 }
