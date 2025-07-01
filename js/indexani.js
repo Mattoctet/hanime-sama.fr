@@ -32,10 +32,15 @@ fetch("/hanime-sama.fr/data/code.jsn")
         div.className = "fiche";
 
         div.innerHTML = `
-          <a href="${lien}" class="episode-card">
-            <img src="${entry.cover}" alt="cover" />
-            <h3>${entry.titre}</h3>
-          </a>
+          <div href="${lien}" class="episode-card index-ani">
+          <div>
+            <img src="/hanime-sama.fr/cover/${entry.code}.jpg" alt="cover">
+            </div>
+            <div>
+            <h2>${entry.titre}</h2>
+            <h3>${entry.genre.join(", ")}</h3>
+            </div>
+          </div>
         `;
 
         container.appendChild(div);

@@ -25,15 +25,15 @@ fetch("/hanime-sama.fr/data/code.jsn")
         const isWarning = jsonData.warning === true;
 
         const lien = isWarning
-          ? `/hanime-sama.fr/part/warning.htm?cible=manga/codemng.htm&code=${entry.code}`
-          : `/hanime-sama.fr/manga/codemng.htm?code=${entry.code}`;
+          ? `/hanime-sama.fr/part/warning.htm?cible=/hanime-sama.fr/manga/code/codemng.htm&code=${entry.code}`
+          : `/hanime-sama.fr/manga/code/codemng.htm?code=${entry.code}`;
 
         const div = document.createElement("div");
         div.className = "fiche";
 
         div.innerHTML = `
           <a href="${lien}">
-            <img src="/${entry.cover}" alt="cover" />
+            <img src="/hanime-sama.fr/cover/${entry.code}.jpg" alt="cover">
             <h3>${entry.titre}</h3>
           </a>
         `;

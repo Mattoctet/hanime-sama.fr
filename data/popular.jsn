@@ -2,28 +2,44 @@
   {
     "code": "abcd1234",
     "titre": "High School DxD",
-    "cover": "/hanime-sama.fr/cover/abcd1234.jpg",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": true
   },
   {
     "code": "haitkuda",
     "titre": "Haite Kudasai",
-    "cover": "/hanime-sama.fr/cover/haitkuda.jpg",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": true
   },
   {
     "code": "jjk12345",
     "titre": "Jujutsu Kaisen",
-    "cover": "/hanime-sama.fr/cover/jjk12345.jpg",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": false
   },
   {
     "code": "stopsmo1",
     "titre": "Stop smoking",
-    "cover": "/hanime-sama.fr/cover/stopsmo1.jpg",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "manwha",
     "warning": true
   }

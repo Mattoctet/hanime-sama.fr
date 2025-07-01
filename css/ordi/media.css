@@ -229,3 +229,7 @@ h1 {
   width: 50%;
   justify-content: center;
 }
+
+.index-ani {
+    display: flex;
+}

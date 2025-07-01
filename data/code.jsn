@@ -2,24 +2,44 @@
   {
     "code": "abcd1234",
     "titre": "High School DxD",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": true
   },
   {
     "code": "haitkuda",
     "titre": "haite kudasai",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": true
   },
   {
     "code": "jjk12345",
     "titre": "JJK",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "anime",
     "warning": false
   },
   {
     "code": "haitkuda",
     "titre": "haite kudasai",
+    "genre": [
+      "action",
+      "ecchi",
+      "fantastique"
+    ],
     "type": "manwha",
     "warning": true
   }

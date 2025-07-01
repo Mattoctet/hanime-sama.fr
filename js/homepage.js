@@ -56,8 +56,9 @@ function populateSection(containerId, items) {
     };
 
     card.innerHTML = `
-      <img src="${item.cover}" alt="${item.titre}">
+      <img src="/hanime-sama.fr/cover/${item.code}.jpg" alt="${item.titre}">
       <h3>${item.titre}</h3>
+      <h3>${item.genre.join(", ")}</h3>
     `;
     container.appendChild(card);
   });
