@@ -1,1 +1,75 @@
+/*/css/ordi/header.css*/
+footer {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    height: 60px; /* ou plus si tu veux */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
  
+#logo img {
+  height: 100px;       /* plus grand que le conteneur pour "rogner" */
+  object-fit: cover;   /* couvre tout sans déformation */
+  object-position: center center; /* centre l’image */
+}
+
+#code-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#code-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#code-input button {
+    padding: 10px 18px;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#code-input button:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    color: white;
+    cursor: pointer;
+    padding: 10px 16px;
+    background-color: #212121;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgb(175, 175, 175);
+    color: black;
+}

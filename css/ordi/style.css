@@ -49,7 +49,7 @@ main {
     cursor: pointer;
     margin-bottom: 20px;
 }
- 
+
 .episode-card-warning {
     width: 250px;
     height: 502px;
@@ -63,10 +63,10 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     margin-bottom: 20px;
-  background-color: #ff00ee11;
-  color: #ffaaaa;
-  border-radius: 15px; 
-  font-weight: bold;
+    background-color: #ff00ee11;
+    color: #ffaaaa;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
 .episode-card img {
