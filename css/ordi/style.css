@@ -63,7 +63,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     margin-bottom: 20px;
-  background-color: #3a0000;
+  background-color: #ff00ee11;
   color: #ffaaaa;
   border-radius: 15px; 
   font-weight: bold;

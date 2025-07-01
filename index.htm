@@ -6,37 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
-  <style>
-    body {
-      opacity: 0;
-      transition: opacity 0.2s ease;
-    }
-  </style>
-
+  <link rel="stylesheet" href="/hanime-sama.fr/css/tel/home.css">
 </head>
 
 <body>
   <div id="header-container">
     <p>Chargement du header...</p>
   </div>
-
-  <script>
-    fetch("/hanime-sama.fr/header.htm")
-      .then(res => {
-        if (!res.ok) throw new Error("Header non trouvé");
-        return res.text();
-      })
-      .then(html => {
-        document.getElementById("header-container").innerHTML = html;
-      })
-      .then(() => import("/hanime-sama.fr/js/header.js"))
-      .catch(err => {
-        document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
-      })
-      .finally(() => {
-        document.body.style.opacity = "1";
-      });
-  </script>
 
   <main>
     <h1>Bienvenue sur Hanime-sama</h1>
@@ -52,27 +28,12 @@
     </section>
   </main>
 
-  <footer>
-        <p>hanime-sama.fr © 2025 | v.2.5</p>
-    </footer>
+  <script src="/hanime-sama.fr/js/footer.js"></script>
+
 
   <script src="/hanime-sama.fr/js/homepage.js"></script>
-  <div id="remonte-container"></div>
-  <script>
-    fetch("/hanime-sama.fr/part/remonte.htm")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("remonte-container").innerHTML = html;
-      })
-      .then(() => import("/hanime-sama.fr/js/remonte.js"))
-      .then(() => {
-        // Charger dynamiquement le CSS remonte.css
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
-        document.head.appendChild(link);
-      });
-  </script>
+  <div id="remonte-container">chargement du bouton...</div>
+  <script src="/hanime-sama.fr/js/loadjs.js"></script>
 
 
 </body>
