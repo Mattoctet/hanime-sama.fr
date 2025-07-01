@@ -57,7 +57,7 @@ function populateSection(containerId, items) {
 
     card.innerHTML = `
       <img src="/hanime-sama.fr/cover/${item.code}.jpg" alt="${item.titre}">
-      <h3>${item.titre}</h3>
+      <h2>${item.titre}</h2>
       <h3>${item.genre.join(", ")}</h3>
     `;
     container.appendChild(card);

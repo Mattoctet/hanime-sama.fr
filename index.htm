@@ -52,17 +52,9 @@
     </section>
   </main>
 
-  <script>
-    fetch("/hanime-sama.fr/footer.htm")
-      .then(res => res.text())
-      .then(() => import("/hanime-sama.fr/js/footer.js"))
-      .then(() => {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = '/hanime-sama.fr/css/footer.css';
-        document.head.appendChild(link);
-      });
-  </script>
+  <footer>
+        <p>hanime-sama.fr © 2025 | v.2.5</p>
+    </footer>
 
   <script src="/hanime-sama.fr/js/homepage.js"></script>
   <div id="remonte-container"></div>
