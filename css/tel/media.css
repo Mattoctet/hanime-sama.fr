@@ -150,7 +150,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 12px;
-    background-color: #0077cc;
+    background-color: #afafaf;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -165,7 +165,7 @@ h1 {
 }
 
 #navig button:hover:not([disabled]) {
-    background-color: #005fa3;
+    background-color: #cc00c9;
 }
 
 #navig button img {

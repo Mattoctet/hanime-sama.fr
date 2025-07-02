@@ -1,6 +1,7 @@
 <!-- /anime/index.html -->
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +10,7 @@
   <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
   <script src="/hanime-sama.fr/js/indexani.js" defer></script>
 </head>
+
 <body>
   <div id="header-container"></div>
 
@@ -27,25 +29,25 @@
     <div id="liste"></div>
   </main>
 
-  <footer>
-        <p>hanime-sama.fr © 2025</p>
-    </footer>
+  <script src="/hanime-sama.fr/js/footer.js"></script>
 
-<div id="remonte-container"></div>
-<script>
-  fetch("/hanime-sama.fr/part/remonte.htm")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("remonte-container").innerHTML = html;
-    })
-    .then(() => import("/hanime-sama.fr/js/remonte.js"))
-    .then(() => {
-      // Charger dynamiquement le CSS remonte.css
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
-      document.head.appendChild(link);
-    });
-</script>
+
+  <div id="remonte-container"></div>
+  <script>
+    fetch("/hanime-sama.fr/part/remonte.htm")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("remonte-container").innerHTML = html;
+      })
+      .then(() => import("/hanime-sama.fr/js/remonte.js"))
+      .then(() => {
+        // Charger dynamiquement le CSS remonte.css
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
+        document.head.appendChild(link);
+      });
+  </script>
 </body>
+
 </html>

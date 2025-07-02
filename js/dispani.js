@@ -35,7 +35,6 @@ fetch(`/hanime-sama.fr/data/anime/${code}.jsn`)
 
     data.saisons.forEach(saison => {
       const details = document.createElement("details");
-      details.open = saison.saison === saisonActuelle;
 
       const summary = document.createElement("summary");
       summary.textContent = "Saison " + saison.saison;
@@ -54,7 +53,7 @@ fetch(`/hanime-sama.fr/data/anime/${code}.jsn`)
         let texteBtn = "";
         if (!titre && !type) texteBtn = `Épisode ${num}`;
         else if (titre && !type) texteBtn = `Épisode ${num} - ${titre}`;
-        else texteBtn = `[${type}] - ${titre}`;
+        else texteBtn = `${type} - ${titre}`;
 
         btn.textContent = texteBtn;
         btn.dataset.num = num;
@@ -141,7 +140,7 @@ function afficherEpisode() {
   nav.innerHTML = "";
 
   const boutonPrec = document.createElement("button");
-  boutonPrec.textContent = "⬅ Précédent";
+  boutonPrec.textContent = "Précédent";
   boutonPrec.disabled = episodeActuel === Math.min(...saisonData.episodes.ep);
   boutonPrec.addEventListener("click", () => {
     episodeActuel--;
@@ -149,7 +148,7 @@ function afficherEpisode() {
   });
 
   const boutonSuiv = document.createElement("button");
-  boutonSuiv.textContent = "Suivant ➡";
+  boutonSuiv.textContent = "Suivant";
   boutonSuiv.disabled = episodeActuel === Math.max(...saisonData.episodes.ep);
   boutonSuiv.addEventListener("click", () => {
     episodeActuel++;
