@@ -36,6 +36,10 @@
     transition: background-color 0.5s ease;
 }
 
+#a404:view-transition {
+    background-color: rgb(175);
+}
+
 h1 {
     font-size: 100px;
     color: rgb(175, 175, 175);
