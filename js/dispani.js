@@ -60,6 +60,7 @@ fetch(`/hanime-sama.fr/data/anime/${code}.jsn`)
 
         btn.addEventListener("click", () => {
           episodeActuel = num;
+          saisonActuelle = saison.saison;
           afficherEpisode();
         });
 
