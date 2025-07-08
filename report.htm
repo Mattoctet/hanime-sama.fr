@@ -1,4 +1,4 @@
-<!-- index.htm -->
+<!-- report.htm -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,58 +6,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/hanime-sama.fr/js/loadcss.js" defer></script>
-    <title>Report</title>
+    <title>Signaler un problème - Hanime-sama</title>
 </head>
 
 <body>
-    <div id="header-container">
-        <p>Chargement du header...</p>
-    </div>
-
-    <script>
-        fetch("/hanime-sama.fr/header.htm")
-            .then(res => {
-                if (!res.ok) throw new Error("Header non trouvé");
-                return res.text();
-            })
-            .then(html => {
-                document.getElementById("header-container").innerHTML = html;
-            })
-            .then(() => import("/hanime-sama.fr/js/header.js"))
-            .catch(err => {
-                document.getElementById("header-container").innerHTML = `<h1>Erreur</h1><p>${err.message}</p>`;
-            });
-    </script>
+    <div id="header-container"></div>
 
     <main>
-        <h1>Page report</h1>
-        <p>
+        <h1>Signaler un problème</h1>
+        <p>Si vous avez rencontré un bug, un lien mort ou un contenu inapproprié, merci de nous le signaler à l'aide du formulaire ci-dessous.</p>
+        <form>
+            <label for="email">Votre email (facultatif) :</label><br>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com"><br><br>
 
-        </p>
+            <label for="message">Description du problème :</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Expliquez-nous ce qui ne va pas..."></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
     </main>
 
-    <footer>
-        <p>hanime-sama.fr © 2025 | v.4</p>
-    </footer>
-
-    <script src="/hanime-sama.fr/js/homepage.js"></script>
-    <div id="remonte-container"></div>
-    <script>
-        fetch("/hanime-sama.fr/part/remonte.htm")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("remonte-container").innerHTML = html;
-            })
-            .then(() => import("/hanime-sama.fr/js/remonte.js"))
-            .then(() => {
-                // Charger dynamiquement le CSS remonte.css
-                const link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = '/hanime-sama.fr/css/remonte.css'; // adapte le chemin si besoin
-                document.head.appendChild(link);
-            });
-    </script>
-
+    <script src="/hanime-sama.fr/js/footer.js"></script>
+      <script src="/hanime-sama.fr/js/loadjs.js"></script>
 
 </body>
 
